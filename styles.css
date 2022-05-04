@@ -26,13 +26,20 @@ a{
 }
 
 .container{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container h2 {
     background-color: black;
+    display: inline-block;
     color: white;
-    padding: 10px;
+    padding: 1rem;
+    font-size: 2.5rem;
+    border-radius: 0.5rem;
+    margin-top: 19vh;
+    letter-spacing: 0.3rem;
 }
 
 
@@ -40,17 +47,34 @@ a{
 #btn{
     background-color: transparent;
     font-weight: bolder;
-    letter-spacing: 0.09rem;
-    margin-top: 15px;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    margin-top: 2rem;
     display: inline-block;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 0.75rem 1.25rem;
+    border-radius: .5rem;
     border: solid;
+    text-transform: uppercase;
 }
 
-
+#btn:hover{
+    background-color: black;
+    color: white;
+}
 
 main{
     margin-top: 8rem;
+}
+    
+@media screen and (max-width: 700px) {
+    #btn{
+        font-size: 0.8rem;
+        letter-spacing: 0.3rem;
+    }
 
+    .container h2 {
+        font-size: 2rem; 
+        letter-spacing: 0.2rem;
+    }
+    
 }
